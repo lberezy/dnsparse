@@ -74,7 +74,7 @@ impl<'a> Iterator for Questions<'a> {
     let mut i = self.buf_i;
 
 
-    assert!(read_question(&self.buf, &mut i));
+    // assert!(read_question(&self.buf, &mut i));
     let question = Question {
       name: Name {
         buf: &self.buf,
